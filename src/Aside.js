@@ -1,6 +1,29 @@
 export default function Aside(){
+  const perfilsugestao = [
+    {
+    img:"Assets/badvibesmemes 1.png",
+    h1:"bad.vibe.memes"
+    },
+    {
+    img:"Assets/chibirdart 1.png",
+    h1:"chibirdat"
+    },
+    {
+    img:"Assets/razoesparaacreditar 1.png",
+    h1:"razoesparaacreditar"
+    },
+    {
+    img:"Assets/adorableanimals 1.png",
+    h1:"adorable_animals"
+    },
+    {
+    img:"Assets/smallcutecats 1.png",
+    h1:"smallcutecats"
+    }
+  ]
+
     return(
-        <aside>
+      <aside>
         <section class="perfil">
           <img src="Assets/catanacomics 1.png" />
           <h1>catanacomics</h1>
@@ -12,36 +35,7 @@ export default function Aside(){
             <h2>Ver tudo</h2>
           </div>
           <section class="perfis">
-            <div class="perfil-sugestao">
-              <img src="Assets/badvibesmemes 1.png" />
-              <h1>bad.vibe.memes</h1>
-              <h2>Segue você</h2>
-              <h3>Seguir</h3>
-            </div>
-            <div class="perfil-sugestao">
-              <img src="Assets/chibirdart 1.png" />
-              <h1>chibirdat</h1>
-              <h2>Segue você</h2>
-              <h3>Seguir</h3>
-            </div>
-            <div class="perfil-sugestao">
-              <img src="Assets/razoesparaacreditar 1.png" />
-              <h1>razoesparaacreditar</h1>
-              <h2>Segue você</h2>
-              <h3>Seguir</h3>
-            </div>
-            <div class="perfil-sugestao">
-              <img src="Assets/adorableanimals 1.png" />
-              <h1>adorable_animals</h1>
-              <h2>Segue você</h2>
-              <h3>Seguir</h3>
-            </div>
-            <div class="perfil-sugestao">
-              <img src="Assets/smallcutecats 1.png" />
-              <h1>smallcutecats</h1>
-              <h2>Segue você</h2>
-              <h3>Seguir</h3>
-            </div>
+            {perfilsugestao.map((item)=><PerfilSugestao img={item.img} h1={item.h1}/>)}
           </section>
         </section>
         <div class="informacoes">
@@ -53,4 +47,14 @@ export default function Aside(){
         </div>
       </aside>
     )
+}
+function PerfilSugestao(props) {
+  return(
+      <div class="perfil-sugestao">
+        <img src={props.img} />
+        <h1>{props.h1}</h1>
+        <h2>Segue você</h2>
+        <h3>Seguir</h3>
+      </div>
+  )
 }
