@@ -67,64 +67,43 @@ background: #ffffff;
 border: 1px solid #dbdbdb;
 border-radius: 3px;
 
+box-sizing: border-box;
+padding-left: 18px;
+padding-top: 18px;
+
 display: flex;
-justify-content: space-between;
+gap: 14px;
+
+overflow: hidden;
+
 }
 .perfil-stories {
-margin-top: 20px;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .backgrounds {
 width: 66px;
-height: 66px;
-
-position: relative;
-top: 18px;
-left: 0;
 }
-.backgrounds-8 {
-width: 66px;
-height: 66px;
 
-position: relative;
-top: 3px;
-left: 0;
-}
 
 .perfil-imagem {
 position: relative;
-top: -43px;
-left: 0px;
+top: -61px;
 }
-.ultimo-perfil {
-width: 28px;
-height: 56px;
 
-position: relative;
-top: -43px;
-left: 0px;
-
-object-fit: cover;
-object-position: left;
-}
 h1 {
 position: relative;
-top: -35px;
+top: -52px;
 left: 00px;
 
 font-family: Roboto;
 font-size: 12px;
 line-height: 14px;
 }
-.nome-perfil-8 {
-position: relative;
-top: -19px;
-left: 00px;
-}
+
 .seta-stories {
 position: absolute;
 z-index: 99;

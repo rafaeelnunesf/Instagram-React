@@ -21,7 +21,6 @@ export default function Aside(){
     h1:"smallcutecats"
     }
   ]
-
     return(
       <aside>
         <section class="perfil">
