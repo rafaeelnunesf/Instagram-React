@@ -189,7 +189,7 @@ align-items: center;
 font-size: 18px;
 margin-left: 18px;
 }
-.reactions .bookmark-reaction {
+.reactions ion-icon:last-child {
 position: absolute;
 left: 560px;
 }
