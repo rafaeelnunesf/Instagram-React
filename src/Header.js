@@ -12,10 +12,9 @@ export default function Header(){
     )
 }
 function Icons() {
-    const iconNames = ["compass-outline","heart-outline","person-outline"]
+    const iconNames = ["paper-plane-outline","compass-outline","heart-outline","person-outline"]
     return(
         <div>
-            <ion-icon class="direct" name="paper-plane-outline"></ion-icon>
             {iconNames.map((item)=><ion-icon name={item}></ion-icon>)}
         </div>
     )

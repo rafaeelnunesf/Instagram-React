@@ -1,25 +1,10 @@
 export default function Aside(){
   const perfilsugestao = [
-    {
-    img:"Assets/badvibesmemes 1.png",
-    h1:"bad.vibe.memes"
-    },
-    {
-    img:"Assets/chibirdart 1.png",
-    h1:"chibirdat"
-    },
-    {
-    img:"Assets/razoesparaacreditar 1.png",
-    h1:"razoesparaacreditar"
-    },
-    {
-    img:"Assets/adorableanimals 1.png",
-    h1:"adorable_animals"
-    },
-    {
-    img:"Assets/smallcutecats 1.png",
-    h1:"smallcutecats"
-    }
+    {img:"Assets/badvibesmemes 1.png",h1:"bad.vibe.memes"},
+    {img:"Assets/chibirdart 1.png",h1:"chibirdat"},
+    {img:"Assets/razoesparaacreditar 1.png",h1:"razoesparaacreditar"},
+    {img:"Assets/adorableanimals 1.png",h1:"adorable_animals"},
+    {img:"Assets/smallcutecats 1.png",h1:"smallcutecats"}
   ]
     return(
       <aside>
@@ -34,7 +19,7 @@ export default function Aside(){
             <h2>Ver tudo</h2>
           </div>
           <section class="perfis">
-            {perfilsugestao.map((item)=><PerfilSugestao img={item.img} h1={item.h1}/>)}
+            {perfilsugestao.map(({img,h1})=><PerfilSugestao img={img} h1={h1}/>)}
           </section>
         </section>
         <div class="informacoes">
@@ -47,11 +32,11 @@ export default function Aside(){
       </aside>
     )
 }
-function PerfilSugestao(props) {
+function PerfilSugestao({img, h1}) {
   return(
       <div class="perfil-sugestao">
-        <img src={props.img} />
-        <h1>{props.h1}</h1>
+        <img src={img} />
+        <h1>{h1}</h1>
         <h2>Segue você</h2>
         <h3>Seguir</h3>
       </div>

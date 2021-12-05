@@ -168,13 +168,17 @@ top: 10px;
 left: 575px;
 }
 .post > img {
-width: 612px;
-height: 612px;
+    width: 612px;
+    height: 612px;
 
-position: absolute;
-left: 0;
-top: 61px;
+    position: absolute;
+    left: 0;
+    top: 61px;
 }
+.post > video {
+    width: 612px;
+    height: 612px;
+  }
 .reactions {
 width: 612px;
 height: 44px;
@@ -219,15 +223,20 @@ font-family: Roboto;
 font-weight: 300;
 font-size: 14px;
 line-height: 16px;
+background-color: #0095F6;
 }
 .footer-post span {
 font-weight: bold;
+background-color: #B2DFFC;
 }
 aside {
 height: 600px;
 width: 300px;
 
 margin-left: 30px;
+
+position: sticky;
+top: 88px;
 }
 
 .perfil {
@@ -412,49 +421,49 @@ aside {
 }
 }
 @media (max-width: 614px) {
-body {
-    overflow-x: hidden;
-}
-.linha-vertical,
-.barra-de-pesquisa,
-ion-icon,
-.seta-stories {
-    display: none;
-}
-.logo-instagram,
-.direct,
-.icon-footer {
-    display: initial;
-}
-.logo-instagram {
-    position: absolute;
-    left: 0px;
-    top: 18px;
-}
-.direct {
-    position: absolute;
-    right: 25px;
-    top: 18px;
-}
-.stories {
-    position: relative;
-    left: 0;
-    top: -34px;
-}
-.posts {
-    top: -35px;
-}
-footer {
-    visibility: visible;
-}
-header div img {
-    width: 103px;
-    height: 29px;
+    body {
+        overflow-x: hidden;
+    }
+    .linha-vertical,
+    .barra-de-pesquisa,
+    ion-icon,
+    .seta-stories {
+        display: none;
+    }
+    .logo-instagram,
+    header ion-icon:nth-child(1),
+    .icon-footer {
+        display: initial;
+    }
+    .logo-instagram {
+        position: absolute;
+        left: 0px;
+        top: 18px;
+    }
+    header ion-icon:nth-child(2){
+        position: absolute;
+        right: 25px;
+        top: 18px;
+    }
+    .stories {
+        position: relative;
+        left: 0;
+        top: -34px;
+    }
+    .posts {
+        top: -35px;
+    }
+    footer {
+        visibility: visible;
+    }
+    header div img {
+        width: 103px;
+        height: 29px;
 
-    position: relative;
-    top: 0px;
-    left: 100px;
-    right: 0;
-}
+        position: relative;
+        top: 0px;
+        left: 100px;
+        right: 0;
+    }
 }
   
